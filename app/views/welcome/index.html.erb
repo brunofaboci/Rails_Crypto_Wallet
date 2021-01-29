@@ -1,0 +1,12 @@
+<h1>Seja Bem-Vindo...</h1>
+
+<p><%= link_to 'Português', root_path(locale: 'pt-BR') %></p> <!-- cria um botão para alterar o idioma-->
+
+<p><%= link_to 'English', root_path(locale:'en') %></p>
+
+<p>Idioma: <strong><%= t('actual_locale') %></strong></p>
+<p>Você está em ambiente de <strong><%= ambiente_rails %></strong></p>
+
+<%= render 'menu' %>
+
+<p><strong>Data: </strong> <%= l(Date.today) %></p>

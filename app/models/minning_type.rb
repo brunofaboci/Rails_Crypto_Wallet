@@ -1,0 +1,2 @@
+class MinningType < ApplicationRecord
+end
