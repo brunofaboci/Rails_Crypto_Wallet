@@ -1,14 +1,18 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Description:</strong>
-  <%= @minning_type.description %>
-</p>
+<form>
 
-<p>
-  <strong>Acronym:</strong>
-  <%= @minning_type.acronym %>
-</p>
+  <div class='form-group'>
+    <%= label_tag nil, @minning_type.class.human_attribute_name(:descriprion) %>
+    <%= text_field_tag nil, @minning_type.description, class:'form-control', disabled: true %>
+  </div>
 
-<%= link_to 'Edit', edit_minning_type_path(@minning_type) %> |
-<%= link_to 'Back', minning_types_path %>
+  <div class='form-group'>
+    <%= label_tag nil, @minning_type.class.human_attribute_name(:acronym) %>
+    <%= text_field_tag nil, @minning_type.acronym, class:'form-control', disabled: true %>
+  </div>
+
+</form>
+
+<%= link_to t('links.edit'), edit_minning_type_path(@minning_type), class:'btn btn-primary' %> |
+<%= link_to t('links.back'), minning_types_path, class:'btn btn-primary' %>

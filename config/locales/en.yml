@@ -30,9 +30,25 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  actual_locale: 'USA'
+  current_locale: 'USA'
+  welcome: 'Welcome!'
+  messages:
+    welcome: 'Looking for a website to register your Crypto Coins??'
+    welcome2: 'Found Sucker!'
+    confirm: 'Are You Shure?'
   hello: "Hello world"
   links:
     edit: 'Edit'
     show: 'Show'
     delete: 'Destroy'
+    new: 'New'
+    back: 'Back'
+  new:
+    coin: 'New Coin'
+    minning_type: 'New Minning Type'
+  editing:
+    coin: 'Editing Coin'
+    minning_type: 'Editing Minning Type'
+  showing:
+    coin: 'Showing Coins'
+    minning_type: 'Showing Minning Type'

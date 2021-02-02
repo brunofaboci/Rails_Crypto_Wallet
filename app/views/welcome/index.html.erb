@@ -1,12 +1,11 @@
-<h1>Seja Bem-Vindo...</h1>
+<div class="bg-light">
+    <h1><%=t('welcome')%></h1>
 
-<p><%= link_to 'Português', root_path(locale: 'pt-BR') %></p> <!-- cria um botão para alterar o idioma-->
+    <h3><%= t('messages.welcome')%></h3>
+    <h3><strong><%= t('messages.welcome2')%></strong></h3>
 
-<p><%= link_to 'English', root_path(locale:'en') %></p>
+    <%= render 'menu' %>
+</div>
 
 <p>Idioma: <strong><%= t('actual_locale') %></strong></p>
-<p>Você está em ambiente de <strong><%= ambiente_rails %></strong></p>
-
-<%= render 'menu' %>
-
 <p><strong>Data: </strong> <%= l(Date.today) %></p>
