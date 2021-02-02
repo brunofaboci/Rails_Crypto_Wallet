@@ -1,21 +1,25 @@
 pt-BR:
   activerecord:
     models:
-      coin: Moeda
-      minning_type: Tipo de Mineração
+      coin:
+        one: 'Moeda'
+        other: 'Moedas'
+      minning_type: 
+        one: 'Tipo de Mineração'
+        other: 'Tipos de Mineração'
     attributes:
       coin:
         id: "id"
-        description: "descrição"
-        acronym: "sigla"
-        url_image: "url da imagem"
-        minning_type: "tipo de mineração"
-        minning_type_id: "tipo de mineração"
-        created_at: "criado em"
-        updated_at: "atualizado em"
+        description: "Descrição"
+        acronym: "Sigla"
+        url_image: "Url da imagem"
+        minning_type: "Tipo de Mineração"
+        minning_type_id: "Tipo de Mineração"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
       minning_type:
         id: "id"
-        description: "descrição"
-        acronym: "sigla"
-        created_at: "criado em"
-        updated_at: "atualizado em"
+        description: "Descrição"
+        acronym: "Sigla"
+        created_at: "Criado em"
+        updated_at: "Atualizado em"
